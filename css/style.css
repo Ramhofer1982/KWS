@@ -1,3 +1,11 @@
+* {
+    overflow: hidden;
+}
+
+html {
+    overflow-y: scroll;
+}
+
 body {
     background: #F3F5F7;
     margin: 0;
@@ -5,6 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #0E1200;
     max-width: 1920px;
+    margin: auto;
 }
 
 button {
@@ -21,6 +30,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+
     background-color: #FFF;
     height: 80px;
     z-index: 300;
@@ -50,7 +60,8 @@ header img {
 }
 
 header nav {
-    display: block;
+    display: flex;
+    align-items: center;
     position: absolute;
     right: 90px;
     top: 0;
@@ -63,6 +74,7 @@ header nav ol {
     list-style-type: none;
     padding: 0;
     line-height: 80px;
+    height: 80px;
 }
 
 header nav ol li {
@@ -76,7 +88,6 @@ header nav ol li:hover {
     background: #EBF7FF;
     cursor: pointer;
     color: #2CA6F9;
-    text-decoration: underline;
 }
 
 header nav button {
@@ -276,6 +287,7 @@ ol.info-sheets li {
     padding: 0 36px;
     width: 364px;
     border-right: 1px solid #fff;
+    overflow: hidden;
 }
 
 ol.info-sheets li:last-child {
@@ -315,6 +327,7 @@ ol.info-sheets p {
     color: #FFFFFF;
     line-height: 30px;
     margin: 0;
+    width: 100%;
 }
 
 div.reasons-why {
@@ -421,10 +434,6 @@ footer a {
     line-height: 23px;
 }
 
-footer span {
-    color: #FFF;
-}
-
 div.carousel div.item {
     width: 360px;
 }
@@ -508,6 +517,14 @@ div.carousel .slick-arrow {
     cursor: pointer;
 }
 
+div.reasons-why .slick-prev {
+    left: -4px;
+}
+
+div.reasons-why .slick-next {
+    right: -4px;
+}
+
 div.carousel .slick-next.slick-arrow {
     background: url('../img/icons/Forward_default.png') no-repeat center;
     background-color: #D4DCE2;
@@ -524,4 +541,16 @@ div.carousel .slick-prev:before, div.carousel .slick-next:before{
 
 div.carousel .slick-list {
     margin: 0 100px;
+}
+
+ul.slick-dots {
+    overflow: visible;
+}
+
+ul.slick-dots > * {
+    overflow: visible;
+}
+
+.slick-dotted.slick-slider {
+    overflow: visible;
 }

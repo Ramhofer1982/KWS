@@ -21,7 +21,7 @@ jumpToArea = function(name) {
             targetPosition = $(document).height();
             break;
         case 'product':
-            targetPosition = $('#areaproduct').offset().top - 80;
+            targetPosition = $('#areaproduct').offset().top - 200;
             break;
     }
 
@@ -36,7 +36,7 @@ highlightNavMenuPoint = function(name) {
 highlightNavigationButton = function(event) {
     var windowTop = $(window).scrollTop();
     var areaIntroTop = $('#areaintro').offset().top;
-    var productTop = $('#areaproduct').offset().top;
+    var productTop = $('#areaproduct').offset().top - 210;
     var isAtEndOfPage = $(window).scrollTop() + $(window).height() > $(document).height() - 300;
     var targetToggleElement = undefined;
 
@@ -87,3 +87,17 @@ $(document).ready(function(){
 
     $(window).scroll(highlightNavigationButton);
 });
+
+
+var swa = {
+    pubToken: 'a7579dd8-dec0-1d4e-8500-487b05bd1e58',
+    baseUrl: 'https://trackerwebanalytics.hana.ondemand.com/tracker/',
+    visitorCookieTimeout: 63113852,
+    dntLevel: 1,
+    bannerEnabled: false
+};
+(function(){
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.defer=true; g.async=true; g.src=swa.baseUrl+'js/privacy.js';
+    s.parentNode.insertBefore(g,s);
+ })();

@@ -23,11 +23,6 @@
         display: none;
     }
 
-    header nav button {
-        position: relative;
-        top: 13px;
-    }
-
     header nav {
         right: 20px;
     }
@@ -142,7 +137,7 @@
         background-image: url('../img/mobile/s2.png');
         width: 355px;
         height: 315px;
-        margin-left: 20px;
+        margin-left: 0;
     }
 
     div.strengths-container > div.image.share {
@@ -206,7 +201,7 @@
     }
 
     div.reasons-why {
-        padding: 20px;
+        padding: 20px 0;
     }
 
     div.reasons-why > h2 {
@@ -255,10 +250,47 @@
         font-size: 14px;
         line-height: 15px;
     }
+
+    div.carousel .slick-list {
+        margin: 0 58px;
+    }
+
+    div.reasons-why .slick-prev {
+        left: -8px;
+    }
+
+    div.reasons-why .slick-next {
+        right: -8px;
+    }
+
+    div.inspire {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 }
 
 @media (max-width: 515px) {
     div.get-started-today {
         background-size: 180%;
+    }
+}
+
+@media (max-width: 420px) {
+    div.strengths-container > div.image.data {
+        margin-left: auto; /* push image to the right */
+    }
+
+    div.strengths-container.image-right {
+        padding-left: 0;
+    }
+
+    footer span.headline span.sap-prefix {
+        display: none;
     }
 }
