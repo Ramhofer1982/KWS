@@ -281,12 +281,3 @@
     }
 
 }
-
-@media (min-width: 1024px) and (max-width: 1128px) {
-    div.strengths-container > div.image.share {
-        background: url('../img/mobile/s3@ipad.jpg') no-repeat;
-        width: 522px;
-        height: 630px;
-        margin-left: 15px;
-    }
-}
