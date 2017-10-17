@@ -22,3 +22,15 @@
        }
 
 }
+
+
+@media only screen and ( -webkit-min-device-pixel-ratio: 2 ) and (min-width: 1024px) and (max-width: 1760px){
+
+       div.strengths-container > div.image.customize {
+           width: 636px;
+           height: 373px;
+           background-image: none;
+           background: url('../img/desktop/s1@2.jpg') no-repeat top left / 636px 373px;
+       }
+
+}
