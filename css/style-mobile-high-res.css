@@ -5,8 +5,11 @@
        only screen and ( min-resolution: 124.8dpi ),
        only screen and ( min-resolution: 1.3dppx ) {
 
-       .box {
-           background: url( 'img/box-bg@2x.png' ) no-repeat top left / 200px 200px;
+       div.strengths-container > div.image.customize {
+           width: 375px;
+           height: 220px;
+           background-image: none;
+           background: url('../img/mobile/s1@2.jpg') no-repeat top left / 750px 440px;
        }
 
 }
