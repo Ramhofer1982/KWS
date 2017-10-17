@@ -53,6 +53,8 @@
         background-image: url('../img/desktop/s3.png');
         height: 614px;
         width: 692px;
+        flex-basis: 692px;
+        flex-shrink: 0;
     }
 
     div.strengths-container.last {
@@ -62,7 +64,7 @@
 
     div.strengths-container.last > div:last-child {
         margin: auto;
-        width: 420px;
+        padding: 0 20px;
         position: relative;
         top: -20px;
     }
