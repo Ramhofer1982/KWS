@@ -13,3 +13,13 @@
        }
 
 }
+
+@media only screen and ( -webkit-min-device-pixel-ratio: 2 ) and (min-width: 1920px){
+
+       div.strengths-container > div.image.customize {
+           background: url('../img/s1@2.jpg') no-repeat top left / 946px 553px;
+           width: 946px;
+           height: 553px;
+       }
+
+}
