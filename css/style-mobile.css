@@ -1,23 +1,5 @@
 
-@media (max-width: 800px) {
-
-    div.strengths-container > div.image.customize {
-        width: 375px;
-        height: 220px;
-        background-image: url('../img/mobile/s1.png');
-    }
-
-    div.strengths-container > div.image.data {
-        background-image: url('../img/mobile/s2.png');
-        width: 355px;
-        height: 315px;
-    }
-
-    div.strengths-container > div.image.share {
-        background-image: url('../img/mobile/s3.png');
-        height: 391px;
-        width: 324px;
-    }
+@media (max-width: 1023px) {
 
     header nav ol {
         display: none;
@@ -85,6 +67,10 @@
         display: none;
     }
 
+    div.strengths-container.first {
+        padding-right: 0;
+    }
+
     div.strengths-container h3 {
         font-size: 25px;
         line-height: 30px;
@@ -130,18 +116,18 @@
     div.strengths-container > div.image.customize {
         width: 375px;
         height: 220px;
-        background-image: url('../img/mobile/s1.png');
+        background-image: url('../img/mobile/s1.jpg');
     }
 
     div.strengths-container > div.image.data {
-        background-image: url('../img/mobile/s2.png');
+        background-image: url('../img/mobile/s2.jpg');
         width: 355px;
         height: 315px;
         margin-left: 0;
     }
 
     div.strengths-container > div.image.share {
-        background: url('../img/mobile/s3.png') no-repeat -4px 0px;
+        background: url('../img/mobile/s3.jpg') no-repeat -4px 0px;
         height: 390px;
         width: 320px;
         position: relative;
@@ -149,7 +135,7 @@
     }
 
     div.get-started-today {
-        background: url(../img/desktop/get-started.jpg) no-repeat 0 0;
+        background: url('../img/desktop/get-started.jpg') no-repeat 0 0;
         height: 384px;
         background-size: 130%;
     }
@@ -290,7 +276,17 @@
         padding-left: 0;
     }
 
-    footer span.headline span.sap-prefix {
-        display: none;
+    div.inspire button.hero {
+        margin-left: 30px;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1128px) {
+    div.strengths-container > div.image.share {
+        background: url('../img/mobile/s3@ipad.jpg') no-repeat;
+        width: 522px;
+        height: 630px;
+        margin-left: 15px;
     }
 }

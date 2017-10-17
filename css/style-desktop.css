@@ -1,4 +1,4 @@
-@media (min-width: 800px) and (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
 
     header img {
         margin-left: 40px;
@@ -38,6 +38,8 @@
         width: 636px;
         height: 373px;
         background-image: url('../img/desktop/s1.png');
+        flex-basis: 636px;
+        flex-shrink: 0;
     }
 
     div.strengths-container > div.image.data {

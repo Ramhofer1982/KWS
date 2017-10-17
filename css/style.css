@@ -206,6 +206,7 @@ div.strengths-container > div.image.share {
     background-image: url('../img/s3.png');
     height: 653px;
     width: 869px;
+    background-position: right;
 }
 
 div.strengths-container > div > * {
