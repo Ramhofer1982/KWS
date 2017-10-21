@@ -1,4 +1,3 @@
-
 @media (max-width: 1023px) {
 
     header nav ol {
@@ -54,6 +53,11 @@
         background: url('../img/mobile/video.jpg') no-repeat 50% 21%;
         height: 230px;
         background-size: 130%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     div.outer-headline button {
@@ -84,7 +88,7 @@
         padding-right: 18px !important;
     }
 
-    div.strengths-container {
+    div.strengths-container, div.strengths-container.first {
         flex-direction: column-reverse;
         padding: 34px 20px 38px 20px;
         text-align: center;
@@ -259,6 +263,21 @@
         padding-right: 20px;
     }
 
+    div.video-player-container {
+        display: none;
+    }
+
+    button.mobile-play-video {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: none;
+    }
+
+    span.play-button-text {
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 515px) {
@@ -280,4 +299,8 @@
         margin-left: 30px;
     }
 
+}
+
+iframe#video {
+    display: none;
 }

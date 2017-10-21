@@ -88,6 +88,9 @@ $(document).ready(function(){
     $(window).scroll(highlightNavigationButton);
 });
 
+showVideo = function() {
+    window.getElementById('video').style.display = 'block';
+}
 
 var swa = {
     pubToken: 'a7579dd8-dec0-1d4e-8500-487b05bd1e58',

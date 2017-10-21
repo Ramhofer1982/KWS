@@ -23,6 +23,8 @@
 	<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
 
 	<script type="text/javascript" src="./js/init.js"></script>
+
+	<!--script src="//cdnapisec.kaltura.com/p/{partner_id}/sp/{partnerId}00/embedIframeJs/uiconf_id/30317401/partner_id/{partnerId}"></script-->
 </head>
 
 <body>
@@ -46,19 +48,30 @@
 
 	<div class="outer-headline">
 		<h2>One interface for all your live business data</h2>
-		<button class="play-video"></button>
 		<button onclick="tryDemo();">Get started - Try demo</button>
 	</div>
 
     <div class="video-container" id="areaintro">
 		<div class="inner-headline">
 	        <h2>One interface for all your live business data</h2>
-			<button class="play-video"></button>
 	        <button onclick="tryDemo();">Get started - Try demo</button>
 		</div>
+		<button class="mobile-play-video">
+			<span class="play-video"></span>
+			<span class="play-button-text ">Watch clip</span>
+		</button>
     </div>
 
     <h2 class="strengths" id="areaproduct">SAP Knowledge Workspace is your tool to manage the unexpected</h2>
+
+	<div class="video-player-container">
+		<button class="video-player">
+			<div class="overlay">
+			</div>
+			<span class="play-video"></span>
+			<span class="play-button-text ">Watch clip</span>
+		</button>
+	</div>
 
     <div class="strengths-container first">
 		<div class="image customize">
@@ -226,6 +239,9 @@
         	<a href="https://www.sap.com/corporate/en/legal/terms-of-use.html" target="_blank">Terms of Use</a>
 		</span>
     </footer>
+
+	<iframe id="video" width="100%" height="100%" src="https://video.sap.com/embed/secure/iframe/entryId/0_5j4a6vkv/uiConfId/30317401?flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[loadThumbnailWithKs]=true&amp;flashvars[loadThumbnailsWithReferrer]=true&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" title="Kaltura Player"></iframe>
+
 </body>
 
 </html>

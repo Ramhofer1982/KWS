@@ -106,14 +106,13 @@ div.outer-headline {
     display: none;
 }
 
-div.video-container button.play-video, div.outer-headline button.play-video {
+div.video-player button.play-video, div.outer-headline button.video-player {
     height: 56px;
     width: 56px;
     border-radius: 50%;
     background: url('../img/icons/Triangle.png') no-repeat center;
     background-color: #FFF;
-    margin: 56px auto;
-    display: none;
+    margin: 0 auto;
 }
 
 div.video-container {
@@ -137,7 +136,13 @@ div.video-container h2, div.outer-headline h2 {
     line-height: 57px;
 }
 
-div.video-container button, div.outer-headline button {
+div.video-container div.inner-headline {
+    width: 100%;
+    background: url(../img/header_shadow.png) no-repeat center 29px;
+    padding: 180px 0;
+}
+
+div.video-container div.inner-headline button, div.outer-headline button {
     width: 254px;
     height: 48px;
     background-image: linear-gradient(90deg, #57D2FD 0%, #2CA6F9 98%);
@@ -150,7 +155,7 @@ div.video-container button, div.outer-headline button {
 }
 
 h2.strengths {
-    margin: 148px auto 60px auto;
+    margin: 116px auto;
     text-align: center;
     max-width: 865px;
     font-size: 40px;
@@ -204,7 +209,7 @@ div.strengths-container > div.image.data {
 
 div.strengths-container > div.image.share {
     background-image: url('../img/s3.png');
-    height: 653px;
+    height: 657px;
     width: 869px;
     background-position: right;
 }
@@ -554,4 +559,75 @@ ul.slick-dots > * {
 
 .slick-dotted.slick-slider {
     overflow: visible;
+}
+
+button.mobile-play-video {
+    display: none;
+}
+
+button.video-player {
+    height: 488px;
+    width: 866px;
+    background: url('../img/video_player.jpg') no-repeat center top;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.video-player-container {
+    border-bottom: 2px solid #E2E4E6;
+    padding-bottom: 116px;
+    position: relative;
+}
+
+span.play-video {
+    font-size: 20px;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    background: url('../img/icons/Triangle.png') no-repeat center;
+    background-color: #FFF;
+    margin: 0 auto;
+    display: block;
+}
+
+span.play-button-text {
+    font-size: 20px;
+    color: #FFF;
+    margin-top: 10px;
+    display: block;
+}
+
+div.strengths-container.first {
+    padding: 116px 88px;
+}
+
+button.video-player div.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(28,46,61,0.6);
+    z-index: 1;
+}
+
+button.video-player:hover div.overlay {
+    background-color: transparent;
+}
+
+div.video-player-container span {
+    z-index: 100;
+}
+
+button.video-player:hover span.play-button-text {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+button.video-player:hover span.play-video {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.7);
 }
