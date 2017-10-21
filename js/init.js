@@ -89,7 +89,8 @@ $(document).ready(function(){
 });
 
 showVideo = function() {
-    window.getElementById('video').style.display = 'block';
+    var kdp = document.getElementById( "kalturaplayer" );
+    kdp.sendNotfication( "doPlay" );
 }
 
 var swa = {
@@ -104,3 +105,47 @@ var swa = {
     g.type='text/javascript'; g.defer=true; g.async=true; g.src=swa.baseUrl+'js/privacy.js';
     s.parentNode.insertBefore(g,s);
  })();
+
+$(document).ready(function(){
+    kWidget.thumbEmbed({
+      "targetId": "kalturaplayer",
+      "wid": "_1921661",
+      "uiconf_id": "35919811",
+      "flashvars": {
+        "leadWithHTML5": "true",
+        "sideBarContainer": {
+          "plugin": "true",
+          "position": "left",
+          "clickToClose": "true"
+        },
+        "chapters": {
+          "plugin": "true",
+          "layout": "vertical",
+          "thumbnailRotator": "false"
+        },
+        "streamSelector": {
+          "plugin": "true"
+        },
+        "EmbedPlayer": {
+          "SpinnerTarget": "videoHolder"
+        },
+        "dualScreen": {
+          "plugin": "true"
+        }
+      },
+      "entry_id": "0_5j4a6vkv"
+    });
+});
+
+kWidget.addReadyCallback( function( playerId ){
+	var kdp = document.getElementById( playerId );
+	kdp.kBind( 'mediaReady', function(){
+
+        $('button.mobile-play-video, button.video-player').click(function(){
+            var kdp = document.getElementById( 'kalturaplayer' );
+    		kdp.sendNotfication( "doPlay");
+            console.log("PLAYING");
+    	});
+
+	})
+});
