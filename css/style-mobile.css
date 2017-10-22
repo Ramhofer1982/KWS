@@ -50,7 +50,7 @@
 
     div.video-container {
         margin-top: 42px;
-        background: url('../img/mobile/video.jpg') no-repeat 50% 21%;
+        /* background: url('../img/mobile/video.jpg') no-repeat 50% 21%;*/
         height: 230px;
         background-size: 130%;
         display: flex;
@@ -58,6 +58,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background: none;
     }
 
     div.outer-headline button {
@@ -267,11 +268,12 @@
         display: none;
     }
 
-    button.mobile-play-video {
+    iframe.mobile-play-video {
         display: block;
-        height: 100%;
-        width: 100%;
+        height: 230px;
+        width: 408px;
         background: none;
+        margin: 0 auto;
     }
 
     span.play-button-text {

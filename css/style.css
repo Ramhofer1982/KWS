@@ -561,7 +561,7 @@ ul.slick-dots > * {
     overflow: visible;
 }
 
-button.mobile-play-video {
+iframe.mobile-play-video {
     display: none;
 }
 
