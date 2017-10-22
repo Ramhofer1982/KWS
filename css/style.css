@@ -565,6 +565,11 @@ button.mobile-play-video {
     display: none;
 }
 
+div.video-player-container iframe {
+    margin: 0 auto;
+    display: block;
+}
+
 button.video-player {
     height: 488px;
     width: 866px;
