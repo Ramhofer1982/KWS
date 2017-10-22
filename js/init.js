@@ -88,6 +88,10 @@ $(document).ready(function(){
     $(window).scroll(highlightNavigationButton);
 });
 
+showVideo = function() {
+    var kdp = document.getElementById( "kalturaplayer" );
+    kdp.sendNotfication( "doPlay" );
+}
 
 var swa = {
     pubToken: 'a7579dd8-dec0-1d4e-8500-487b05bd1e58',
