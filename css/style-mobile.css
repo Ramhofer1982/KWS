@@ -44,14 +44,14 @@
         color: #202427;
         font-size: 25px;
         line-height: 30px;
-        margin: 54px auto 34px auto;
+        margin: 34px auto;
         text-align: center;
     }
 
     div.video-container {
         margin-top: 42px;
         /* background: url('../img/mobile/video.jpg') no-repeat 50% 21%;*/
-        height: 230px;
+        height: auto;
         background-size: 130%;
         display: flex;
         flex-wrap: wrap;
@@ -270,8 +270,8 @@
 
     iframe.mobile-play-video {
         display: block;
-        height: 230px;
-        width: 408px;
+        height: 211px;
+        width: 375px;
         background: none;
         margin: 0 auto;
     }
