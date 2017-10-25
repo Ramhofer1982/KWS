@@ -1,0 +1,9 @@
+@media (max-width: 1023px) {
+    div.banner {
+        display: none;
+    }
+
+    h2.main-header {
+        margin-top: 120px;
+    }
+}
