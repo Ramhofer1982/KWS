@@ -15,6 +15,13 @@
     }
 
     header div.button-area {
+        height: 54px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    header div.button-area {
         right: 40px;
     }
 
