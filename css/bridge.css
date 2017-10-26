@@ -17,15 +17,32 @@ body {
 }
 
 button {
-    background-image: linear-gradient(90deg, #57D2FD 0%, #2CA6F9 100%);
+    background-image: linear-gradient(90deg, #2CA6F9 0%, #57D2FD 100%);
     border-radius: 100px;
     color: #fff;
-    width: 180px;
-    height: 48px;
-    font-size: 18px;
-    line-height: 50px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
     display: block;
     margin: 0 auto;
+    border: 0;
+}
+
+button:hover {
+    background-image: linear-gradient(90deg, #217EBE 0%, #3CB0D8 100%);
+    cursor: pointer;
+}
+
+button.invert {
+    background-image: none;
+    background-color: #FFF;
+    color: #2EA8F9;
+}
+
+button.invert:hover {
+    background-color: #2EA8F9;
+    color: #FFF;
 }
 
 header {
@@ -51,12 +68,8 @@ header > div {
 }
 
 header button {
-    display: inline-block;
-    background-image: linear-gradient(90deg, #57D2FD 0%, #2CA6F9 100%);
-    border-radius: 100px;
     height: 40px;
     width: 120px;
-    color: #fff;
     font-size: 16px;
     line-height: 17px;
     position: absolute;
@@ -76,8 +89,8 @@ header img {
 }
 
 div.banner {
-    background: url(../img/get_started_bg.jpg) no-repeat center;
-    height: 400px;
+    background: url(../img/get_started_bg_bridge.jpg) no-repeat center -156px;
+    height: 604px;
     margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
@@ -88,87 +101,125 @@ div.banner {
 div.banner h2 {
     color: #FFF;
     margin: auto;
-    max-width: 500px;
+    max-width: 770px;
     text-align: center;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 50px;
+    line-height: 57px;
+    font-weight: normal;
+    background: url('../img/bridge/headline_shadow.png') no-repeat center;
+    text-shadow: 0 0 20px rgba(0,0,0,0.3);
+    padding: 150px;
 }
 
 h2.main-header {
-    font-size: 30px;
-    max-width: 500px;
+    font-size: 40px;
+    max-width: 962px;
     text-align: center;
-    line-height: 35px;
+    line-height: 50px;
     padding: 0;
-    margin: 80px auto;
+    margin: 82px auto;
 }
 
-div.trial-features {
+div.card {
     margin: 0 auto;
-    width: 500px;
+    max-width: 882px;
     background-color: #FFF;
-    padding: 40px;
+    padding: 42px 46px;
+    position: relative;
+    overflow: visible;
+    border-radius: 3px;
 }
 
 div.trial-features h3 {
     font-weight: bold;
+    margin: 0;
+    font-size: 20px;
+}
+
+div.card hr {
+    position: absolute;
+    bottom: -4px;
+    left: 26px;
+    right: 26px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    border: none;
+    margin-top: 0;
+    height: 20px;
+    z-index: -1;
 }
 
 div.trial-features ul {
     overflow: visible;
+    font-size: 20px;
+    padding-left: 20px;
+    list-style-image: url('../img/bridge/list-item.svg');
+    margin: 24px 0 0 0;
 }
 
 div.trial-features ul li {
     overflow: visible;
-    margin-top: 10px;
+    margin-top: 22px;
     padding-left: 10px;
+    line-height: 25px;
 }
 
 h2.guide {
-    margin: 80px auto;
-    max-width: 500px;
+    margin: 88px auto 48px auto;
+    max-width: 626px;
     text-align: center;
+    font-size: 40px;
+    line-height: 50px;
 }
 
 h3.guide {
     text-align: center;
     max-width: 500px;
     margin: 0 auto;
+    font-size: 20px;
+    line-height: 14px;
+    overflow: visible;
+    font-weight: normal;
 }
 
 div.guide-tour {
-    background: url(../img/s2.png) no-repeat center;
-    height: 500px;
+    background: url(../img/bridge/guided-tour.png) no-repeat center;
+    height: 518px;
 }
 
 h3.guide.overview {
     margin: 50px auto 30px auto;
+    display: none;
 }
 
 iframe {
-    display: block;
+    display: none;
     margin: 0 auto;
 }
 
 div.register-info {
-    width: 600px;
-    margin: 80px auto;
+    margin-top: 82px;
     background-color: #FFF;
-    padding: 30px 50px;
+    padding: 38px 50px 32px 50px;
 }
 
 div.register-info p {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 30px;
     text-align: center;
+    margin: 0;
 }
 
 div.register-info p span.attention {
     font-weight: bold;
 }
 
+div.register-info button {
+    margin-top: 26px;
+}
+
 span.test-trial {
     text-align: center;
-    margin: 80px auto;
+    margin: 66px auto;
     display: block;
 }
 
@@ -179,24 +230,27 @@ span.test-trial a {
 div.feedback {
     color: #FFF;
     text-align: center;
-    padding: 80px 0;
+    padding: 112px 0 86px 0;
     background-image: linear-gradient(-180deg, #354F67 0%, #2B465F 100%);
 }
 
 div.feedback h2 {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 40px;
+    line-height: 45px;
+    margin: 0;
 }
 
 
 div.feedback h3 {
-    font-size: 22px;
-    line-height: 27px;
+    margin: 24px 0 32px 0;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: normal;
 }
 
 
 div.logo {
     background: #233749;
-    padding: 76px 0;
+    padding: 52px 0;
     text-align: center;
 }
