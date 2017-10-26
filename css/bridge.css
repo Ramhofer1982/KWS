@@ -2,6 +2,10 @@
     overflow: hidden;
 }
 
+h1, h2 {
+    font-weight: bold;
+}
+
 html {
     overflow-y: scroll;
 }
@@ -11,9 +15,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    color: #0E1200;
     max-width: 1920px;
     margin: auto;
+    color: #202427;
+}
+
+button.plain {
+    background-image: none;
+    background: transparent;
+    text-decoration: underline;
+    color: #202427;
+}
+
+button.plain:hover {
+    background-image: none;
 }
 
 button {
@@ -72,6 +87,15 @@ header button {
     width: 120px;
     font-size: 16px;
     line-height: 17px;
+    display: inline-block;
+}
+
+header button.plain {
+    width: auto;
+    padding-left: 30px;
+}
+
+header div.button-area {
     position: absolute;
     right: 80px;
 }

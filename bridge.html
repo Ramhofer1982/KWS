@@ -13,6 +13,25 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="./css/bridge.css" rel="stylesheet">
 	<link href="./css/bridge-mobile.css" rel="stylesheet">
+
+	<script>
+		var demoUrl = 'https://go.kwstrial-sap.cfapps.eu10.hana.ondemand.com/';
+		var contactMail = 'knowledge_workspace@sap.com';
+		var registerUrl = 'https://kws-beta.accounts.ondemand.com/ui/public/showRegisterForm?spName=go.aws-live-eu10&targetUrl=&sourceUrl=';
+
+		var goToLogon = function() {
+    		window.open(demoUrl, '_blank');
+		}
+
+		var goToRegister = function() {
+			window.open(registerUrl, '_blank');
+		}
+
+		var contactUs = function() {
+			location.href =  "mailto:"+contactMail;
+		}
+	</script>
+
 </head>
 
 <body>
@@ -22,7 +41,10 @@
 			<img src="./img/sap-logo-svg.svg">
 	        <h1>Knowledge Workspace</h1>
 
-			<button>Register</button>
+			<div class="button-area">
+				<button onclick="goToRegister();">Register</button>
+				<button onclick="goToLogon();" class="plain">Login</button>
+			</div>
         </div>
     </header>
 
@@ -32,7 +54,7 @@
 
     <h2 class="main-header">
         Experience the value in resolving issues on a seamless,
-        collaborative case board by singning up to
+        collaborative case board by signing up to
         your SAP Knowledge Workspace 30-day trial.
     </h2>
 
@@ -67,7 +89,7 @@
             </span>
         </p>
 
-        <button>Register</button>
+        <button onclick="goToRegister();">Register</button>
 
 		<hr>
     </div>
@@ -81,7 +103,7 @@
         <div class="feedback">
             <h2>Have feedback or want to ask    questions?</h2>
             <h3>Please reach out to us: knowledge_workspace@sap.com</h3>
-            <button class="invert">Contact us</button>
+            <button class="invert" onclick="contactUs();">Contact us</button>
         </div>
         <div class="logo">
             <img src="./img/sap-logo-svg.svg">
