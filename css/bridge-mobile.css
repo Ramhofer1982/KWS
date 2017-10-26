@@ -1,9 +1,177 @@
 @media (max-width: 1023px) {
+    body {
+        padding-top: 54px;
+    }
+
     div.banner {
         display: none;
     }
 
     h2.main-header {
-        margin-top: 120px;
+        font-size: 20px;
+        line-height: 25px;
+        max-width: 660px;
+        margin: 36px 40px;
+    }
+
+    header div.button-area {
+        right: 40px;
+    }
+
+    header img {
+        margin-left: 40px;
+    }
+
+    header img {
+        height: 22px;
+    }
+
+    header h1 {
+        line-height: 54px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    header div.button-area button {
+        height: 30px;
+        font-size: 14px;
+        line-height: 15px;
+        width: 80px;
+    }
+
+    header {
+        height: 54px;
+    }
+
+    header button.plain {
+        display: none;
+    }
+
+    div.trial-features h3 {
+        font-size: 14px;
+    }
+
+    div.trial-features ul {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    div.trial-features ul li {
+        margin-top: 16px;
+    }
+
+    div.trial-features ul {
+        list-style-image: url('../img/bridge/mobile-list-item.svg');
+    }
+
+    div.card {
+        padding: 30px 24px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    h2.guide {
+        font-size: 20px;
+        line-height: 25px;
+        margin: 36px 40px;
+    }
+
+    h3.guide {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    div.guide-tour {
+        background: url(../img/bridge/mobile-guided-tour.jpg) no-repeat center bottom;
+        height: 294px;
+    }
+
+    div.register-info {
+        margin-top: 36px;
+    }
+
+    div.register-info p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    div.register-info button {
+        height: 30px;
+        font-size: 14px;
+        width: 80px;
+        line-height: 26px;
+        margin-top: 24px;
+    }
+
+    span.test-trial {
+        margin: 40px 20px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    div.feedback {
+        padding: 36px 40px;
+    }
+
+    div.feedback h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    div.feedback h3 {
+        font-size: 14px;
+        line-height: 21px;
+        margin: 18px 0 26px 0;
+    }
+
+    div.feedback button {
+        width: 90px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    div.logo {
+        padding: 40px 0;
+    }
+
+    div.logo img {
+        height: 40px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    div.card {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    h2.main-header {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    header div.button-area {
+        right: 20px;
+    }
+
+    header img {
+        margin-left: 20px;
+    }
+
+    h2.guide {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    div.feedback {
+        padding: 40px 20px;
+    }
+}
+
+@media only screen and ( -webkit-min-device-pixel-ratio: 2 ) and (max-width: 1023px){
+    div.guide-tour {
+        background: url(../img/bridge/mobile-guided-tour@2.jpg) no-repeat center bottom / 342px 254px;
     }
 }
