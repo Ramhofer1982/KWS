@@ -1,0 +1,281 @@
+* {
+    overflow: hidden;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background: #F3F5F7;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1920px;
+    margin: auto;
+    color: #202427;
+}
+
+button.plain {
+    background-image: none;
+    background: transparent;
+    text-decoration: underline;
+    color: #202427;
+}
+
+button.plain:hover {
+    background-image: none;
+}
+
+button {
+    background-image: linear-gradient(90deg, #2CA6F9 0%, #57D2FD 100%);
+    border-radius: 100px;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background-image: linear-gradient(90deg, #217EBE 0%, #3CB0D8 100%);
+    cursor: pointer;
+}
+
+button.invert {
+    background-image: none;
+    background-color: #FFF;
+    color: #2EA8F9;
+}
+
+button.invert:hover {
+    background-color: #2EA8F9;
+    color: #FFF;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #FFF;
+    height: 80px;
+    z-index: 300;
+}
+
+header > div {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+}
+
+header button {
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    line-height: 17px;
+    display: inline-block;
+}
+
+header button.plain {
+    width: auto;
+    padding-left: 30px;
+}
+
+header div.button-area {
+    position: absolute;
+    right: 80px;
+}
+
+header h1 {
+    margin: 0;
+    line-height: 53px;
+    font-size: 18px;
+    color: #000000;
+    margin-left: 5px;
+}
+
+header img {
+    margin-left: 88px;
+}
+
+div.banner {
+    background: url(../img/get_started_bg_bridge.jpg) no-repeat center -156px;
+    height: 604px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.banner h2 {
+    color: #FFF;
+    margin: auto;
+    max-width: 770px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 57px;
+    font-weight: normal;
+    background: url('../img/bridge/headline_shadow.png') no-repeat center;
+    text-shadow: 0 0 20px rgba(0,0,0,0.3);
+    padding: 150px;
+}
+
+h2.main-header {
+    font-size: 40px;
+    max-width: 962px;
+    text-align: center;
+    line-height: 50px;
+    padding: 0;
+    margin: 82px auto;
+}
+
+div.card {
+    margin: 0 auto;
+    max-width: 882px;
+    background-color: #FFF;
+    padding: 42px 46px;
+    position: relative;
+    overflow: visible;
+    border-radius: 3px;
+}
+
+div.trial-features h3 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 20px;
+}
+
+div.card hr {
+    position: absolute;
+    bottom: -4px;
+    left: 26px;
+    right: 26px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    border: none;
+    margin-top: 0;
+    height: 20px;
+    z-index: -1;
+}
+
+div.trial-features ul {
+    overflow: visible;
+    font-size: 20px;
+    padding-left: 20px;
+    list-style-image: url('../img/bridge/list-item.svg');
+    margin: 24px 0 0 0;
+}
+
+div.trial-features ul li {
+    overflow: visible;
+    margin-top: 22px;
+    padding-left: 10px;
+    line-height: 25px;
+}
+
+h2.guide {
+    margin: 88px auto 48px auto;
+    max-width: 626px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+h3.guide {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 14px;
+    overflow: visible;
+    font-weight: normal;
+}
+
+div.guide-tour {
+    background: url(../img/bridge/guided-tour.png) no-repeat center;
+    height: 518px;
+}
+
+h3.guide.overview {
+    margin: 50px auto 30px auto;
+    display: none;
+}
+
+iframe {
+    display: none;
+    margin: 0 auto;
+}
+
+div.register-info {
+    margin-top: 82px;
+    background-color: #FFF;
+    padding: 38px 50px 32px 50px;
+}
+
+div.register-info p {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+div.register-info p span.attention {
+    font-weight: bold;
+}
+
+div.register-info button {
+    margin-top: 26px;
+}
+
+span.test-trial {
+    text-align: center;
+    margin: 66px auto;
+    display: block;
+}
+
+span.test-trial a {
+    color: #000;
+}
+
+div.feedback {
+    color: #FFF;
+    text-align: center;
+    padding: 112px 0 86px 0;
+    background-image: linear-gradient(-180deg, #354F67 0%, #2B465F 100%);
+}
+
+div.feedback h2 {
+    font-size: 40px;
+    line-height: 45px;
+    margin: 0;
+}
+
+
+div.feedback h3 {
+    margin: 24px 0 32px 0;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+
+div.logo {
+    background: #233749;
+    padding: 52px 0;
+    text-align: center;
+}
