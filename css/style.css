@@ -92,7 +92,7 @@ header nav ol li:hover {
 
 header nav button {
     display: inline-block;
-    background-image: linear-gradient(90deg, #57D2FD 0%, #2CA6F9 100%);
+    background-image: linear-gradient(90deg, #2CA6F9 0%, #57D2FD 100%);
     border-radius: 100px;
     height: 40px;
     width: 120px;
@@ -100,6 +100,11 @@ header nav button {
     margin-left: 46px;
     font-size: 16px;
     line-height: 17px;
+}
+
+header nav button:hover {
+    background-image: linear-gradient(90deg, #217EBE 0%, #3CB0D8 100%);
+    cursor: pointer;
 }
 
 div.outer-headline {
@@ -145,13 +150,18 @@ div.video-container div.inner-headline {
 div.video-container div.inner-headline button, div.outer-headline button {
     width: 254px;
     height: 48px;
-    background-image: linear-gradient(90deg, #57D2FD 0%, #2CA6F9 98%);
+    background-image: linear-gradient(90deg, #2CA6F9 0%, #57D2FD 100%);
     border-radius: 100px;
     color: #fff;
     margin: auto;
     display: block;
     font-size: 18px;
     line-height: 50px;
+}
+
+div.video-container div.inner-headline button:hover, div.outer-headline button:hover {
+    background-image: linear-gradient(90deg, #217EBE 0%, #3CB0D8 100%);
+    cursor: pointer;
 }
 
 h2.strengths {
@@ -261,7 +271,7 @@ div.get-started-today > div {
 }
 
 div.get-started-today button {
-    background-image: linear-gradient(90deg, #57D2FD 0%, #2CA6F9 100%);
+    background-image: linear-gradient(90deg, #2CA6F9 0%, #57D2FD 100%);
     border-radius: 100px;
     color: #fff;
     width: 180px;
@@ -269,6 +279,11 @@ div.get-started-today button {
     font-size: 18px;
     line-height: 50px;
     z-index: 1;
+}
+
+div.get-started-today button:hover {
+    background-image: linear-gradient(90deg, #217EBE 0%, #3CB0D8 100%);
+    cursor: pointer;
 }
 
 ol.info-sheets {
@@ -389,9 +404,14 @@ div.inspire button {
 }
 
 div.inspire button.hero {
-    background-image: linear-gradient(90deg, #57D2FD 0%, #2CA6F9 100%);
+    background-image: linear-gradient(90deg, #2CA6F9 0%, #57D2FD 100%);
     color: #FFF;
     margin-left: 64px;
+}
+
+div.inspire button.hero:hover {
+    background-image: linear-gradient(90deg, #217EBE 0%, #3CB0D8 100%);
+    cursor: pointer;
 }
 
 footer {
