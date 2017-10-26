@@ -2,11 +2,11 @@ var demoUrl = 'https://go.kwstrial-sap.cfapps.eu10.hana.ondemand.com/';
 var contactMail = 'knowledge_workspace@sap.com';
 
 tryDemo = function() {
-    window.open(demoUrl, '_blank');
+    window.location.href = "./bridge.html";
 }
 
 contactUs = function() {
-    location.href =  "mailto:"+contactMail;
+    location.href = "mailto:"+contactMail;
 }
 
 downloadInfoSheet = function(name) {
