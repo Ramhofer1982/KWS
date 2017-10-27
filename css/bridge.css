@@ -211,6 +211,12 @@ div.guide-tour {
     height: 518px;
 }
 
+@media only screen and ( -webkit-min-device-pixel-ratio: 2 ) and (min-width: 1024px){
+    div.guide-tour {
+        background: url(../img/bridge/guided-tour@2.jpg) no-repeat center / 869px 519px;
+    }
+}
+
 h3.guide.overview {
     margin: 50px auto 30px auto;
     display: none;
