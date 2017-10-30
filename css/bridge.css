@@ -121,6 +121,7 @@ div.banner {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 div.banner h2 {
@@ -143,6 +144,7 @@ h2.main-header {
     line-height: 50px;
     padding: 0;
     margin: 82px auto;
+    margin-top: 164px;
 }
 
 div.card {
