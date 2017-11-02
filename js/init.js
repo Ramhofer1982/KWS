@@ -2,7 +2,7 @@ var demoUrl = 'https://go.kwstrial-sap.cfapps.eu10.hana.ondemand.com/';
 var contactMail = 'knowledge_workspace@sap.com';
 
 tryDemo = function() {
-    window.location.href = "./bridge.html";
+    window.location.href = "./trial.html";
 }
 
 contactUs = function() {
