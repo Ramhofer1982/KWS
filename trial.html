@@ -30,6 +30,20 @@
 		var contactUs = function() {
 			location.href =  "mailto:"+contactMail;
 		}
+		
+		var swa = {
+		    pubToken: 'trial',
+		    baseUrl: 'https://trackerwebanalytics.hana.ondemand.com/tracker/',
+		    visitorCookieTimeout: 63113852,
+		    dntLevel: 1,
+		    bannerEnabled: false
+		};
+		(function(){
+		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		    g.type='text/javascript'; g.defer=true; g.async=true; g.src=swa.baseUrl+'js/privacy.js';
+		    s.parentNode.insertBefore(g,s);
+		 })();
+		
 	</script>
 
 </head>
