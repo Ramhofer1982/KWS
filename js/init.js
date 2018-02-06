@@ -95,7 +95,7 @@ showVideo = function() {
 
 var swa = {
     pubToken: 'a7579dd8-dec0-1d4e-8500-487b05bd1e58',
-    baseUrl: 'https://trackerwebanalytics.hana.ondemand.com/tracker/',
+    baseUrl: 'https://webanalytics.cfapps.eu10.hana.ondemand.com/tracker/',
     visitorCookieTimeout: 63113852,
     dntLevel: 1,
     bannerEnabled: false
